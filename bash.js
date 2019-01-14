@@ -1,11 +1,3 @@
-process.stdout.write('prompt > ')
-process.stdin.on('data', (data) => {
-    const cmd = data.toString().trim();
+let pwd = require('./pwd.js')
 
-    if (cmd === "pwd"){
-        process.stdout.write(process.cwd());
-    }
-
-    process.stdout.write('\nYou typed: ' + cmd);
-    process.stdout.write('\nprompt > ');
-})
+pwd()

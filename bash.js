@@ -1,3 +1,7 @@
-let pwd = require('./pwd.js')
+// let pwd = require('./pwd.js')
 
-pwd()
+// pwd()
+
+let ls = require('./ls.js')
+
+ls()
